@@ -1,0 +1,55 @@
+
+<p>
+    <a routerLink="/bookings">Make Bookings</a>
+    </p>
+    <a routerLink="/hotels">Available Hotels</a>
+<h1>Currrent Bookings</h1> 
+<table class="customers" style="border: solid 1px black; background-Color: #d2e69c; text-align: center;width:100%">
+    <thead>
+      <tr>
+        <th scope="col">Hotel ID</th>
+        <th scope="col">Booking Date</th>
+        <th scope="col">Booking Start</th>
+        <th scope="col">User Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of bookings">
+          <td>{{item.hotel_id}}</td>
+        <td>{{ item.booking_date }}</td>
+        <td>{{item.booking_start}}</td>
+        <td>{{item.user_id}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+
+
+<!-- <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" >
+    <p>
+      <label for="username">User Name</label>
+      <input type="text" id="username" name="username" ngModel>
+    </p>
+    <p>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" ngModel>
+    </p>
+    <p>
+      <button type="submit">Submit</button>
+    </p>
+  </form> -->
+
+
+<!-- <p>
+    <b>Title:</b><span> {{  }}</span>
+  </p>
+  <p>
+    <b>Pages:</b><span> {{  }}</span>
+  </p>
+  <p>
+    <b>Chapters:</b><span> {{  }}</span>
+  </p>
+  <p>
+    <b>Authors:</b><span> {{  }}</span>
+  </p> -->
+  

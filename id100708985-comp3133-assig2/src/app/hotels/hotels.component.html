@@ -1,0 +1,33 @@
+<p>
+<a routerLink="/bookings">Bookings</a>
+</p>
+<!-- <div *ngFor="let item of hotels">
+        <h2> {{ item.hotel_name }}</h2>
+        <p>Hotel iD: {{ item.hotel_id }} </p>
+        <p>street: {{ item.street }} </p>
+        <p>city: {{ item.city }} </p>
+        <p>price: {{ item.price }} </p>
+
+</div> -->
+
+<table class="customers" style="border: solid 1px black; background-Color: #d2e69c; text-align: center;width:100%">
+    <thead>
+      <tr>
+        <th scope="col">Hotel Name</th>
+        <th scope="col">Hotel ID</th>
+        <th scope="col">Street</th>
+        <th scope="col">City</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of hotels">
+          <td>{{item.hotel_name}}</td>
+          <td>{{item.hotel_id}}</td>
+        <td>{{ item.street }}</td>
+        <td>{{item.city}}</td>
+        <td>{{item.price}}</td>
+
+      </tr>
+    </tbody>
+  </table>

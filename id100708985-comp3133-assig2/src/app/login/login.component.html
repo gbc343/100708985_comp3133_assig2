@@ -1,0 +1,25 @@
+<h1>Login</h1>
+<a routerLink="/signup">Create an Account</a>
+
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" >
+  <p>
+    <label for="username">User Name</label>
+    <input type="text" id="username" name="username" ngModel>
+  </p>
+  <p>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" ngModel>
+  </p>
+  <p>
+    <button type="submit">Submit</button>
+  </p>
+</form>
+
+<!-- <div class="log-form">
+  <h2>Login to your account</h2>
+  <form  #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+    <input type="text" id="username" title="username" placeholder="username" ngModel />
+    <input type="password" id="password" title="username" placeholder="password" ngModel />
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</div> -->
